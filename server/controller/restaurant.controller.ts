@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { Restaurant } from "../models/restaurant.model";
+import { Restaurant } from "../models/restaurant.model.js";
 import Multer from "multer";
-import uploadImageOnCloudinary from "../utils/imageUpload";
-import { Order } from "../models/order.model";
+import uploadImageOnCloudinary from "../utils/imageUpload.js";
+import { Order } from "../models/order.model.js";
 
 export const createRestaurant = async (req: Request, res: Response) => {
     try {
